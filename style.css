@@ -452,11 +452,28 @@ span {
     .home-img img {
         width: 70vw;
         margin-top: 8rem;
+        
     }
     .about-img img {
         width: 70vw;
         margin-top: 4rem;
     }
+    .navbar {
+      display: none;
+      flex-direction: column;
+      background-color: #008080; /* same as your current */
+      position: absolute;
+      top: 60px; /* just below header */
+      width: 100%;
+      left: 0;
+      padding: 1rem;
+      z-index: 999;
+}
+
+.navbar.active {
+  display: flex;
+}
+
 }
 @media (max-width: 617px){
     html {
